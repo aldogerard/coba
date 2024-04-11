@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  @apply transition-all duration-100;
+}
+
+body {
+  @apply bg-gradient-to-br from-emerald-50 via-cyan-100 to-emerald-200 selection:bg-primary selection:text-light;
+}
+
+::-webkit-scrollbar {
+  @apply w-[10px];
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-lg bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-gray-400;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply rounded-lg bg-gray-500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.list {
+  @apply flex flex-row items-center gap-4 rounded-lg px-4 py-3  hover:text-primary;
+}
+
+.title {
+  @apply border-b border-emerald-800 pb-4 text-4xl font-medium;
+}
+
+.card {
+  @apply flex min-w-[180px] overflow-hidden rounded-2xl  bg-white px-6 py-6 shadow-md;
+}
+
+.box-toggle {
+  @apply flex flex-wrap items-center justify-center gap-4;
+}
+
+.toggle-switch {
+  @apply relative h-7 w-14 cursor-pointer rounded-lg border-[2px] border-black bg-gradient-to-r shadow-inner shadow-black/70 transition-all duration-300;
+}
+
+.toggle-switch-inner {
+  @apply absolute -top-[3.7px] h-8 w-8 rounded-xl  border-[3px] border-black bg-gray-50 shadow-inner shadow-black/20 transition-all duration-300;
+}
