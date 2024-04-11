@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply bg-gradient-to-br from-emerald-50 via-cyan-100 to-emerald-200 selection:bg-primary selection:text-light;
+  @apply selection:bg-primary selection:text-light bg-gradient-to-br from-emerald-50 via-cyan-100 to-emerald-200;
 }
 
 ::-webkit-scrollbar {
@@ -37,11 +37,11 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .list {
-  @apply flex flex-row items-center gap-4 rounded-lg px-4 py-3  hover:text-primary;
+  @apply hover:text-primary flex flex-row items-center gap-4 rounded-lg px-4  py-3;
 }
 
 .title {
@@ -49,7 +49,7 @@ input[type="number"] {
 }
 
 .card {
-  @apply flex min-w-[180px] overflow-hidden rounded-2xl  bg-white px-6 py-6 shadow-md;
+  @apply flex min-w-[176px] overflow-hidden rounded-2xl  bg-white px-6 py-6 shadow-md;
 }
 
 .box-toggle {

@@ -22,12 +22,12 @@ const SidebarNavigation = ({ children }) => {
 
   return (
     <>
-      <section className=" relative mx-auto flex h-screen min-w-max max-w-7xl bg-light ">
-        <nav className="fixed z-50 flex h-full w-52 flex-col justify-between bg-light px-4 py-10">
+      <section className=" bg-light relative mx-auto flex h-screen w-max max-w-7xl overflow-x-hidden">
+        <nav className="bg-light fixed z-50 flex h-full w-52 flex-col justify-between px-4 py-10">
           <div className="flex w-full flex-row items-center justify-center gap-3 ">
             <TbFishChristianity
               size={32}
-              className="mt-1 rotate-45 text-primary "
+              className="text-primary mt-1 rotate-45 "
             />
             <h1 className="text-xl">
               <span className="font-semibold">Cat</span>Fish
@@ -39,7 +39,7 @@ const SidebarNavigation = ({ children }) => {
           <main className=" mt-14 flex h-full flex-col gap-2">
             <Link
               to="/"
-              className={`list  ${location == "" ? "bg-slate-100 text-primary" : "text-gray-400"}`}
+              className={`list  ${location == "" ? "text-primary bg-slate-100" : "text-gray-400"}`}
             >
               <FaHouse size={15} />
               <h1 className="text-sm">Dashboard</h1>
@@ -47,7 +47,7 @@ const SidebarNavigation = ({ children }) => {
 
             <Link
               to="/kontrol"
-              className={`list ${location == "kontrol" ? "bg-slate-100 text-primary" : "text-gray-400"}`}
+              className={`list ${location == "kontrol" ? "text-primary bg-slate-100" : "text-gray-400"}`}
             >
               <FaGear size={15} />
               <h1 className="text-sm ">Kontrol</h1>
@@ -55,7 +55,7 @@ const SidebarNavigation = ({ children }) => {
 
             <Link
               to="/add"
-              className={`list ${location == "add" ? "bg-slate-100 text-primary" : "text-gray-400"}`}
+              className={`list ${location == "add" ? "text-primary bg-slate-100" : "text-gray-400"}`}
             >
               <FaWeightScale size={15} />
               <h1 className="text-sm ">Data Ikan</h1>
@@ -68,7 +68,7 @@ const SidebarNavigation = ({ children }) => {
           </div> */}
         </nav>
 
-        <main className="overflow-X-hidden relative ml-52 flex h-max min-h-full w-full flex-col gap-6  border-emerald-500 bg-slate-100 px-20 py-10 ">
+        <main className="overflow-X-hidden relative ml-52 flex h-max w-full flex-col gap-6  border-emerald-500 bg-slate-100 px-20 py-10 ">
           {children}
         </main>
       </section>

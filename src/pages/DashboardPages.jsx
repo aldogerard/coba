@@ -51,11 +51,12 @@ const DashboardPages = () => {
         <h1>Dashboard</h1>
       </div>
 
-      <div className="flex flex-wrap justify-between ">
+      <div className="flex flex-wrap justify-between gap-y-6 ">
         <CardSensor name="pH" value={dataSensor.ph} />
         <CardSensor name="Amonia" value={dataSensor.amonia} />
         <CardSensor name="Kebutuhan Pakan" value={kebutuhanPakan} />
         <CardSensor name="Waktu Pemberian Pakan" value={waktuPakanTerakhir} />
+        <CardSensor name="Kebutuhan Pakan" value={kebutuhanPakan} />
       </div>
 
       <div className=" flex flex-wrap justify-between">

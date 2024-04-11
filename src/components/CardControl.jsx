@@ -23,7 +23,7 @@ const CardControl = ({
         });
         onClick(value);
       }}
-      className={`flex h-[158px] w-[292px]  overflow-hidden rounded-xl  bg-white px-7 py-5 shadow-md ${statusKontrol == "otomatis" ? "cursor-not-allowed opacity-70" : "cursor-pointer"} ${statusAktuator[value] && "outline outline-1 outline-primary"} ${!control && "cursor-default"}`}
+      className={`flex h-[158px] w-[288px]  overflow-hidden rounded-xl  bg-white px-7 py-5 shadow-md ${statusKontrol == "otomatis" ? "cursor-not-allowed opacity-70" : "cursor-pointer"} ${statusAktuator[value] && "outline-primary outline outline-1"} ${!control && "cursor-default"}`}
     >
       <div className="flex flex-col items-start gap-4">
         <div
